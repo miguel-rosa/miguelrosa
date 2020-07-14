@@ -1,0 +1,16 @@
+.post{
+    
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+.post__container{
+    width:1200px;
+    text-align: left;
+}
+
+h1{
+    font-size:50px
+}
