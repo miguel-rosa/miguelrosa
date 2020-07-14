@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import api from '../../services/api';
 
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
@@ -11,7 +11,7 @@ const Home = () => {
             setPosts(response.data);
             console.log(posts);
         })
-    }, [])
+    }, [posts])
 
     return(
         <main>

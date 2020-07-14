@@ -13,7 +13,7 @@ const Post = ({ match }) => {
             setPost(response.data);
             console.log(post);
         })
-    }, [])
+    }, [id, post])
 
     return(
         <main className='post'>
