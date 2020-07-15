@@ -16,8 +16,42 @@
     padding:20px;  
     display:flex;
     flex: 1;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+    .footer__container{
+        flex-direction: column-reverse;
+        
+        
+    }
+}
+.footer__copy{
+    font-weight: 500;
+    margin-right: 100px;
 }
 
-.footer__container p{
-    font-weight: 500;
+@media screen and (max-width:768px){
+    .footer__copy{
+       margin-right:0;
+    }
+}
+.footer__icons{
+    margin-bottom: 20px;
+}
+.footer__wrapper-icon{
+    display:inline;
+    margin-right: 50px;
+}
+@media screen and (max-width:768px){
+    .footer__wrapper-icon{
+        margin-right: 20px;
+    }
+}
+.footer__icon{
+    font-size:25px;
+    color:var(--second-color);
+    transition:all .3s ease-in-out;
+}
+.footer__icon:hover{
+    opacity:.6
 }

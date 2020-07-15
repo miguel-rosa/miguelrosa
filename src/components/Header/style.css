@@ -5,8 +5,7 @@
     background:rgba(255,255,255,.95);
     backdrop-filter: blur(7px); 
     position: sticky;
-    top: 0;
-    
+    top: 0;  
 }
 
 .header__container{
@@ -24,6 +23,12 @@
     color:#000;
     transition: all .3s eas ;
 }
+@media screen and (max-width:768px){
+    .header__container__title{
+        font-size: 20px;
+    }
+}
+
 .header__container__title:hover{
     opacity:.6
 }

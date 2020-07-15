@@ -3,21 +3,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height:85vh
-    
+    min-height:82vh
 }
+
+@media screen and (max-width:768px){
+    .home{
+        min-height:70vh
+    }
+}
+
 .home__container{
     
     max-width: 1200px;
     display:flex;
     align-items:center;
-    padding:10px;
+    padding:50px 10px;
     justify-content: space-between;
     flex-direction: column;
 }
 @media screen and (max-width:768px){
     .home__container{
-        padding: 0 20px;
+        padding: 70px 20px;
     }
 }
 .home__hero{
@@ -31,7 +37,7 @@
 }
 @media screen and (max-width:768px){
     .hero__title{
-        font-size:57px;
+        font-size:45px;
     }
 }
 .hero__description{
@@ -41,7 +47,7 @@
 }
 @media screen and (max-width:768px){
     .hero__description{
-        font-size:24px;
+        font-size:20px;
         width:100%;
         
     }
@@ -49,6 +55,11 @@
 .hero__footer{
     display: flex;
     margin-top:40px;
+}
+@media screen and (max-width:768px){
+    .hero__footer{
+        margin-top:25px;
+    }
 }
 .hero__footer .Main-Button{
     margin-right: 15px !important;
