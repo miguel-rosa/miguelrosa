@@ -26,6 +26,7 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio__posts__wrapper">
                     {   
+                    
                         posts.map(post=> (
                            <Card 
                             id={post.id} 
@@ -34,6 +35,7 @@ const Portfolio = () => {
                             type="portfolio" />
                             )
                         )
+                    
                     }
                 </div>
             </div>

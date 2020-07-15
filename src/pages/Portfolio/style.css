@@ -1,28 +1,33 @@
 .portfolio{
-    display:flex;
+    width:100%;
     justify-content: center;
+    display: flex;
     align-items: center;
     flex-direction: column;
     animation: fadeup .6s ease-in-out;
-    
+  
 }
 .portfolio__container{ 
-    width:100%;
+    width: 100%;
     max-width: 1200px;
-    display:flex;
-    align-items:space-between;
+    display: block;
+    align-items:flex-start;
     padding:20px;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 }
 @media screen and (max-width:768px){
+    .portfolio{
+        display: block;
+    }
     .portfolio__container{
-        width:fit-content;
+        width:auto
     }
 }
 .portfolio__hero{
     text-align: left;
-    margin-top:100px
+    margin-top:100px;
+    width:100%;
 }
 .portfolio__hero__title{
     font-weight: 500;

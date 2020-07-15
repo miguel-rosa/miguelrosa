@@ -1,23 +1,27 @@
 .blog{
-    display:flex;
+    width:100%;
     justify-content: center;
+    display: flex;
     align-items: center;
     flex-direction: column;
     animation: fadeup .6s ease-in-out;
-    
+  
 }
 .blog__container{ 
-    width:100%;
+    width: 100%;
     max-width: 1200px;
-    display:flex;
-    align-items:space-between;
+    display: block;
+    align-items:flex-start;
     padding:20px;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 }
 @media screen and (max-width:768px){
+    .blog{
+        display: block;
+    }
     .blog__container{
-        width:fit-content;
+        width:auto
     }
 }
 .blog__hero{
