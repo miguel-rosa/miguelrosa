@@ -52,7 +52,7 @@
 }
 @media screen and (max-width:768px){
     .footer__wrapper-icon{
-        margin-right: 20px;
+        margin:0 10px;
     }
 }
 .footer__icon{
