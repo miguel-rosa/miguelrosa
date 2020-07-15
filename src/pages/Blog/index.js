@@ -10,11 +10,16 @@ const Blog = () => {
     
     useEffect( () => {
         postsApi.get('posts?_embed').then(response => {
-            setPosts(response.data);           
+            setPosts(response.data);    
+            console.log(response.data);
         })
     }, [])
-    console.log(posts)
 
+    function handleDate(date){
+        return `${date.slice(5,7)}/${date.slice(0,4)}`
+    }
+
+    
     return(
         <main className="blog">
             <div className="blog__container">
@@ -29,9 +34,11 @@ const Blog = () => {
                     {   
                         posts.map(post=> (
                             <Card 
+                                key={`post-${post.id}`}
                                 id={post.id} 
                                 title={post.title.rendered} 
                                 description={post.excerpt.rendered}
+                                date={handleDate(post.date)}
                                 type="posts" />
                             )
                         )

@@ -2,10 +2,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background:rgba(255,255,255,.95);
+    background:var(--main-color);  
     backdrop-filter: blur(7px); 
     position: sticky;
     top: 0;  
+    z-index: 99;
 }
 
 .header__container{
@@ -20,7 +21,7 @@
 .header__container__title{
     font-size:25px;
     font-weight:700;
-    color:#000;
+    color:var(--second-color);
     transition: all .3s eas ;
 }
 @media screen and (max-width:768px){

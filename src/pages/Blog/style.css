@@ -3,7 +3,6 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    flex-direction: column;
     animation: fadeup .6s ease-in-out;
   
 }
@@ -33,6 +32,7 @@
     font-size:50px;
     line-height: 1.1;
     font-family: var(--main-font);
+    color:var(--second-color);
 }
 @media screen and (max-width:768px){
     .blog__hero__title{
@@ -43,6 +43,7 @@
     font-size:20px;
     width:70%;
     line-height: 1.4;
+    color:var(--second-color);
 }
 @media screen and (max-width:768px){
     .blog__hero__description{

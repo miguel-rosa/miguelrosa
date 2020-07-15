@@ -4,15 +4,18 @@ import { Link } from 'react-router-dom';
 import './style.css'
 
 const Card = (props) => {
+
+  
     return(
         <div key={props.id} className="Card-Post">
             <div className="Card-Container">
                 <Link to={`/${props.type}/${props.id}`}> 
                     <div className="Card-Wrapper">
-                        <h2 className="Card-Title">
+                        <h2 className="Card-Title"> 
                             {props.title}
                         </h2>
-                        <span>
+                        <span className="Card-Date">
+                            {props.date}
                         </span>
                     </div>
                     <p className="Card-Excerpt">

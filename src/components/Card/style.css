@@ -18,10 +18,13 @@
     padding:20px 0 20px 0px;
     background-size: cover;
     transition:all .3s ease-in-out;
-    text-align:left
+    text-align:left;
 }
 .Card-Container:hover{
     filter:drop-shadow( 0 20px 40px rgba(0,0,0,.06))
+}
+.Card-Wrapper{
+    position: relative;
 }
 
 .Card-Title{
@@ -29,6 +32,16 @@
     color:var(--second-color);
     text-align:left;
     display: inline;
+}
+.Card-Date{
+    margin-left: 20px;
+    color:var(--second-color);
+    font-weight: 500;
+    opacity:.5;
+    font-size:14px;
+    transform: translateY(5px);
+    
+    position: absolute;
 }
 .Card-Excerpt{
     font-size:17px;

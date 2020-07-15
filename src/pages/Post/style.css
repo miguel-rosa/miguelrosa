@@ -1,13 +1,42 @@
 .post{
-    display:flex;
-    justify-content: center;       
+    width:100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    animation: fadeup .6s ease-in-out;
+    position: relative;
 }
 
 .post__container{
-    width:1200px;
-    text-align: left;
+    max-width: 1200px;
+    display: block;
+    padding:10px 20px;
+    flex-direction: column;
+    animation: fadeup .6s ease-in-out;    
 }
+@media screen and (max-width:768px){
+    .post{
+        display: block;
+    }
+    .post__container{
+        width:auto
+    }
+}
+.post__hero{
+    text-align: left;
+    margin-top:100px;
+    width:90%;
+}
+
 
 h1{
     font-size:50px
+}
+.post-description{
+    margin-top:50px;
+    font-size:20px;
+    font-weight: 400;
+    width:70%;
+    line-height: 1.4;
+    color:var(--second-color);
 }

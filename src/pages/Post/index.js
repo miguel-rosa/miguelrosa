@@ -11,26 +11,24 @@ const Post = ({ match }) => {
     useEffect( () => {
         postsApi.get(`posts/${id}?_embed`).then(response=>{
             setPost(response.data);
-            
         })
-    }, [post, id])
+    }, [id])
     
     return(
         <main className='post'>
-            {
-            
-            post.title !== undefined 
-            ?
-            (
-             <div className="post__container">
-                 <h1>{post.title.rendered}</h1>
-                 <p>{post.content.rendered}</p>
-             </div> 
-            )
-            : console.log(post)
-             
-             
-         }          
+            <div className='post__container'>
+                <div className="post__hero">
+                    {
+                        post.title !== undefined &&
+                            (
+                                <div>
+                                    <h1>{post.title.rendered}</h1>
+                                    <p className="post-description">{post.content.rendered}</p>
+                                </div> 
+                            )
+                    }          
+                </div>
+            </div>
         </main>
     );
 }

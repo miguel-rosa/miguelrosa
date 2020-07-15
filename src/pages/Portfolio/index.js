@@ -12,7 +12,7 @@ const Portfolio = () => {
             setPosts(response.data);           
         })
     }, [])
-    console.log(posts)
+    
 
     return(
         <main className="portfolio">
@@ -26,16 +26,15 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio__posts__wrapper">
                     {   
-                    
                         posts.map(post=> (
                            <Card 
+                            key={`portfolio-${post.id}`}
                             id={post.id} 
                             title={post.title.rendered} 
                             description={post.excerpt.rendered}
                             type="portfolio" />
                             )
                         )
-                    
                     }
                 </div>
             </div>

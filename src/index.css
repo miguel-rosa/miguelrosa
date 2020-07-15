@@ -4,6 +4,14 @@
   --second-color:#000;
 }
 
+/*
+:root{
+  --main-font:Space;
+  --main-color:#000;
+  --second-color:#FFF;
+}
+*/
+
 body {
   margin: 0;
   font-family: Space, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -47,4 +55,13 @@ a{
       transform:translateY(0);
       opacity: 1;
   }
+}
+
+#body{
+  background:var(--main-color);
+}
+
+.App{
+  position: relative;
+  height:100vh
 }

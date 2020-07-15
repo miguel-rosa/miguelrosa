@@ -1,7 +1,7 @@
 .footer{
     justify-content: center;
-    background:rgba(255,255,255,.95);  
-    position: absolute;
+    background:var(--main-color);  
+    position: fixed;
     bottom:0;
     left:0;   
     display: flex;
@@ -33,6 +33,7 @@
     }
 }
 .footer__copy{
+    color:var(--second-color);
     font-weight: 500;
     margin-right: 100px;
 }
