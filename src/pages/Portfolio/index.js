@@ -4,7 +4,7 @@ import postsApi from '../../services/postsApi';
 import './style.css';
 import { Link } from 'react-router-dom'
 
-const Blog = () => {
+const Portfolio = () => {
     const [posts, setPosts] = useState([]);
     
     useEffect( () => {
@@ -15,29 +15,29 @@ const Blog = () => {
     console.log(posts)
 
     return(
-        <main className="blog">
-            <div className="blog__container">
-                <div className="blog__hero">
-                <h1 className="blog__hero__title">
-                        <b>Blog</b>
+        <main className="portfolio">
+            <div className="portfolio__container">
+                <div className="portfolio__hero">
+                <h1 className="portfolio__hero__title">
+                        <b>Portfólio</b>
                     </h1>
-                    <p className="blog__hero__description">Últimas postagens</p>
+                    <p className="portfolio__hero__description">Últimos trabalhos</p>
                     
                 </div>
-                <div className="blog__posts__wrapper">
+                <div className="portfolio__posts__wrapper">
                     {   
                         posts.map(post=> (
-                            <div key={post.id} className="blog__post">
-                                <div className="blog__post__container">
+                            <div key={post.id} className="portfolio__post">
+                                <div className="portfolio__post__container">
                                     <Link to={`/posts/${post.id}`}> 
-                                        <div className="blog__post__wrapper">
-                                            <h2 className="blog__post__title">
+                                        <div className="portfolio__post__wrapper">
+                                            <h2 className="portfolio__post__title">
                                                 {post.title.rendered}
                                             </h2>
                                             <span>
                                             </span>
                                         </div>
-                                        <p className="blog__post__excerpt">
+                                        <p className="portfolio__post__excerpt">
                                             {String(post.excerpt.rendered).slice(0,100)}
                                         </p>
                                    </Link> 
@@ -52,4 +52,4 @@ const Blog = () => {
     );
 }
 
-export default Blog;
+export default Portfolio;

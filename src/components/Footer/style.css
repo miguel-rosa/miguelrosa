@@ -20,9 +20,7 @@
 }
 @media screen and (max-width:768px){
     .footer__container{
-        flex-direction: column-reverse;
-        
-        
+        flex-direction: column-reverse;        
     }
 }
 .footer__copy{
@@ -34,10 +32,11 @@
     .footer__copy{
        margin-right:0;
     }
+    .footer__icons{
+        margin-bottom: 20px;
+    }
 }
-.footer__icons{
-    margin-bottom: 20px;
-}
+
 .footer__wrapper-icon{
     display:inline;
     margin-right: 50px;

@@ -1,4 +1,4 @@
-.blog{
+.portfolio{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     animation: fadeup .6s ease-in-out;
     
 }
-.blog__container{ 
+.portfolio__container{ 
     width:100%;
     max-width: 1200px;
     display:flex;
@@ -16,39 +16,39 @@
     flex-direction: column;
 }
 @media screen and (max-width:768px){
-    .blog__container{
+    .portfolio__container{
         width:fit-content;
     }
 }
-.blog__hero{
+.portfolio__hero{
     text-align: left;
     margin-top:100px
 }
-.blog__hero__title{
+.portfolio__hero__title{
     font-weight: 500;
     font-size:50px;
     line-height: 1.1;
     font-family: var(--main-font);
 }
 @media screen and (max-width:768px){
-    .blog__hero__title{
+    .portfolio__hero__title{
         font-size:45px;
     }
 }
-.blog__hero__description{
+.portfolio__hero__description{
     font-size:20px;
     width:70%;
     line-height: 1.4;
 }
 @media screen and (max-width:768px){
-    .blog__hero__description{
+    .portfolio__hero__description{
         font-size:20px;
         width:100%;
         
     }
 }
 
-.blog__posts__wrapper{
+.portfolio__posts__wrapper{
     display:flex;
     width:100%;
     justify-content: center;
@@ -56,18 +56,18 @@
     flex:1;
     margin-top:50px   
 }
-.blog__post{
+.portfolio__post{
     width:50%;   
     animation: fadeup .6s ease-in-out;
 }
 
 @media screen and (max-width:768px){
-    .blog__post{
+    .portfolio__post{
         width:100%;       
    }
 }
 
-.blog__post__container{  
+.portfolio__post__container{  
     padding:20px 0 20px 0px;
     background-size: cover;
     transition:all .3s ease-in-out;
@@ -75,21 +75,23 @@
 }
 
 
-.blog__post__container:hover{
+.portfolio__post__container:hover{
     
     filter:drop-shadow( 0 20px 40px rgba(0,0,0,.06))
 
 }
-.blog__post__wrapper{
+/*
+.portfolio__post__wrapper{
     
 }
-.blog__post__title{
+*/
+.portfolio__post__title{
     font-size:25px;
     color:var(--second-color);
     text-align:left;
     display: inline;
 }
-.blog__post__excerpt{
+.portfolio__post__excerpt{
     font-size:17px;
     line-height: 1.4;
     color:var(--second-color);
@@ -97,7 +99,7 @@
     padding:10px 0 15px 0;
 }
 
-.blog__post__icon{
+.portfolio__post__icon{
     color:var(--second-color);
     font-size: 30px;
 }

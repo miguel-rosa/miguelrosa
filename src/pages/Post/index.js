@@ -1,10 +1,10 @@
-import React /*, {useState, useEffect} */ from 'react';
-/*
+import React , {useState, useEffect} from 'react';
+
 import postsApi from '../../services/postsApi'
 import './style.css';
-*/
+
 const Post = ({ match }) => {
-    /*
+    
     const [post, setPost] = useState([]);
     const { params: { id } } = match;
 
@@ -14,11 +14,11 @@ const Post = ({ match }) => {
             
         })
     }, [post, id])
-    */
+    
     return(
         <main className='post'>
             {
-            /*
+            
             post.title !== undefined 
             ?
             (
@@ -28,7 +28,7 @@ const Post = ({ match }) => {
              </div> 
             )
             : console.log(post)
-             */
+             
              
          }          
         </main>
