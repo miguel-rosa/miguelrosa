@@ -1,35 +1,29 @@
-import React, {useState, useEffect} from 'react';
-import api from '../../services/api';
+import React from 'react';
 
-import { Link } from 'react-router-dom'
+
+import './style.css';
+
+import MainButton from '../../components/MainButton'
+import SecondButton from '../../components/SecondButton'
 
 const Home = () => {
-    const [posts, setPosts] = useState([]);
-    
-    useEffect(() => {
-        api.get('posts').then(response => {
-            setPosts(response.data);
-            console.log(posts);
-        })
-    }, [posts])
 
     return(
-        <main>
-            <div>
-                <h1>Check out new posts</h1>
-            </div>
-            <div className="posts__wrapper">
-                {
-                    posts.map(post=>{ 
-                        return(
-                            <div key={post.id}>
-
-                               <Link to={`/posts/${post.id}`}> <h2>{post.title.rendered}</h2></Link>
-                                
-                            </div>
-                        )
-                    })
-                }
+        <main className="home">
+            <div className="home__container">
+                <div className="home__hero">
+                    <h1 className="hero__title">
+                        Olá! sou o <br/>
+                        <b>Miguel Rosa,</b>
+                    </h1>
+                    <p className="hero__description">trabalho como desenvolvedor front-end júnior na Upsites Digital</p>
+                    <div className="hero__footer">
+                        <MainButton to="/portfolio" text="Portfólio" />
+                        <SecondButton to="/blog" text="Blog" />
+                        
+                    </div>
+                </div>
+               
             </div>
         </main>
     );

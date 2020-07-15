@@ -1,0 +1,17 @@
+.Main-Button{
+    padding:17px 40px;
+    background: var(--second-color);
+    color:var(--main-color);
+    font-size:25px;
+    border:2px solid var(--second-color);
+    transition:all .3s ease-in-out;
+}
+@media screen and (max-width:768px){
+    .Main-Button{
+        padding:15px 30px;
+        font-size:17px;
+    }
+}
+.Main-Button:hover{
+    transform: translateY(-4px);
+}

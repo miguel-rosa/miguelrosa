@@ -1,9 +1,6 @@
 .post{
-    
     display:flex;
-    justify-content: center;
-    
-    
+    justify-content: center;       
 }
 
 .post__container{
