@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import postsApi from '../../services/postsApi';
 
+import Card from '../../components/Card';
+
 import './style.css';
-import { Link } from 'react-router-dom'
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
@@ -27,22 +28,11 @@ const Blog = () => {
                 <div className="blog__posts__wrapper">
                     {   
                         posts.map(post=> (
-                            <div key={post.id} className="blog__post">
-                                <div className="blog__post__container">
-                                    <Link to={`/posts/${post.id}`}> 
-                                        <div className="blog__post__wrapper">
-                                            <h2 className="blog__post__title">
-                                                {post.title.rendered}
-                                            </h2>
-                                            <span>
-                                            </span>
-                                        </div>
-                                        <p className="blog__post__excerpt">
-                                            {String(post.excerpt.rendered).slice(0,100)}
-                                        </p>
-                                   </Link> 
-                                </div>
-                            </div>
+                            <Card 
+                                id={post.id} 
+                                title={post.title.rendered} 
+                                description={post.excerpt.rendered}
+                                type="posts" />
                             )
                         )
                     }

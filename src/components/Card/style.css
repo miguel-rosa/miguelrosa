@@ -1,0 +1,39 @@
+.Card-Post{
+    width:50%;   
+    animation: fadeup .6s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.Card-Post:hover{
+    opacity:.7;
+}
+
+@media screen and (max-width:768px){
+    .Card-Post{
+        width:100%;       
+   }
+}
+
+.Card-Container{  
+    padding:20px 0 20px 0px;
+    background-size: cover;
+    transition:all .3s ease-in-out;
+    text-align:left
+}
+.Card-Container:hover{
+    filter:drop-shadow( 0 20px 40px rgba(0,0,0,.06))
+}
+
+.Card-Title{
+    font-size:25px;
+    color:var(--second-color);
+    text-align:left;
+    display: inline;
+}
+.Card-Excerpt{
+    font-size:17px;
+    line-height: 1.4;
+    color:var(--second-color);
+    opacity: .8;
+    padding:10px 0 15px 0;
+}

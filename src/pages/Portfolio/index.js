@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import postsApi from '../../services/postsApi';
-
 import './style.css';
-import { Link } from 'react-router-dom'
+
+import Card from '../../components/Card';
 
 const Portfolio = () => {
     const [posts, setPosts] = useState([]);
@@ -27,22 +27,11 @@ const Portfolio = () => {
                 <div className="portfolio__posts__wrapper">
                     {   
                         posts.map(post=> (
-                            <div key={post.id} className="portfolio__post">
-                                <div className="portfolio__post__container">
-                                    <Link to={`/posts/${post.id}`}> 
-                                        <div className="portfolio__post__wrapper">
-                                            <h2 className="portfolio__post__title">
-                                                {post.title.rendered}
-                                            </h2>
-                                            <span>
-                                            </span>
-                                        </div>
-                                        <p className="portfolio__post__excerpt">
-                                            {String(post.excerpt.rendered).slice(0,100)}
-                                        </p>
-                                   </Link> 
-                                </div>
-                            </div>
+                           <Card 
+                            id={post.id} 
+                            title={post.title.rendered} 
+                            description={post.excerpt.rendered}
+                            type="portfolio" />
                             )
                         )
                     }
