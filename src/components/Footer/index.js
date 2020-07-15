@@ -3,11 +3,11 @@ import './style.css'
 
 const Footer = ()=> {
     return(
-        <foter className="footer">
-            <div className="footer-container">
-                @2020  Miguel Rosa
+        <footer className="footer">
+            <div className="footer__container">
+                <p>2020 © Miguel Rosa</p>
             </div>
-        </foter>
+        </footer>
     )
 }
 
