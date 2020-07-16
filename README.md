@@ -11,3 +11,8 @@ Empregado para fazer as requisições HTTP a uma aplicação WordPress, onde sub
 <h3>Back-end - Headless WordPress<h3>
 <h4>Custom Post Type</h4>
 Para diferenciar as postagens dos trabalhos e organizar as requisições de forma coesa, criei um Custom Post Type "Works" no WordPress, responsável por englobar o conteúdo que preenche a página do portifolio
+
+## 💡 O QUE APRENDI
+<p>
+Além de exercitar conceitos básicos de front-end como design responsivo e html semântico, esse projeto foi muito útil para aplicar conceitos de componentização, organização de código, continuous delivery e deploy.
+</p>
