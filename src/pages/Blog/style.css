@@ -2,9 +2,9 @@
     width:100%;
     justify-content: center;
     display: flex;
-    align-items: center;
-    animation: fadeup .6s ease-in-out;
-  
+    align-items: flex-start;
+    min-height: var(--main-height);
+    animation: fadeup .6s ease-in-out; 
 }
 .blog__container{ 
     width: 100%;

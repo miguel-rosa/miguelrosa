@@ -2,9 +2,10 @@
     width:100%;
     justify-content: center;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     animation: fadeup .6s ease-in-out;
     position: relative;
+    min-height: var(--main-height);
   
 }
 .portfolio__container{ 

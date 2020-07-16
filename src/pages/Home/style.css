@@ -2,7 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height:82vh;
+    min-height: var(--main-height);
     animation: fadeup .6s ease-in-out;
     position: relative;
 }

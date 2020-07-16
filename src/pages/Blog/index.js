@@ -11,7 +11,6 @@ const Blog = () => {
     useEffect( () => {
         api.get('posts?_embed').then(response => {
             setPosts(response.data);    
-            console.log(response.data);
         })
     }, [])
 
