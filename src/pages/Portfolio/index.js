@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react';
-import postsApi from '../../services/postsApi';
+import api from '../../services/api';
 import './style.css';
 
 import Card from '../../components/Card';
 
 const Portfolio = () => {
-    const [posts, setPosts] = useState([]);
+
+    const [works, setWorks] = useState([]);
     
     useEffect( () => {
-        postsApi.get('posts?_embed').then(response => {
-            setPosts(response.data);           
+        api.get('work?_embed').then(response => {
+            setWorks(response.data);       
         })
     }, [])
     
@@ -24,14 +25,14 @@ const Portfolio = () => {
                     <p className="portfolio__hero__description">Últimos trabalhos</p>
                     
                 </div>
-                <div className="portfolio__posts__wrapper">
+                <div className="portfolio__works__wrapper">
                     {   
-                        posts.map(post=> (
+                        works.map(work => (
                            <Card 
-                            key={`portfolio-${post.id}`}
-                            id={post.id} 
-                            title={post.title.rendered} 
-                            description={post.excerpt.rendered}
+                            key={`work-${work.id}`}
+                            id={work.id} 
+                            title={work.title.rendered} 
+                            description={work.content.rendered}
                             type="portfolio" />
                             )
                         )

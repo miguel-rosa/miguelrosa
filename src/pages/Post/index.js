@@ -1,6 +1,6 @@
 import React , {useState, useEffect} from 'react';
 
-import postsApi from '../../services/postsApi'
+import api from '../../services/api'
 import './style.css';
 
 const Post = ({ match }) => {
@@ -9,7 +9,7 @@ const Post = ({ match }) => {
     const { params: { id } } = match;
 
     useEffect( () => {
-        postsApi.get(`posts/${id}?_embed`).then(response=>{
+       api.get(`posts/${id}?_embed`).then(response=>{
             setPost(response.data);
         })
     }, [id])

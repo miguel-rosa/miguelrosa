@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import postsApi from '../../services/postsApi';
+import api from '../../services/api';
 
 import Card from '../../components/Card';
 
@@ -9,7 +9,7 @@ const Blog = () => {
     const [posts, setPosts] = useState([]);
     
     useEffect( () => {
-        postsApi.get('posts?_embed').then(response => {
+        api.get('posts?_embed').then(response => {
             setPosts(response.data);    
             console.log(response.data);
         })
