@@ -33,12 +33,13 @@ const Blog = () => {
                     {   
                         posts.map(post=> (
                             <Card 
-                                key={`post-${post.id}`}
+                                key={`article-${post.id}`}
                                 id={post.id} 
                                 title={post.title.rendered} 
                                 description={post.excerpt.rendered}
                                 date={handleDate(post.date)}
-                                type="posts" />
+                                type="blog"
+                                />
                             )
                         )
                     }

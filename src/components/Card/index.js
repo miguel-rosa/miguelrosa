@@ -18,8 +18,10 @@ const Card = (props) => {
                             {props.date}
                         </span>
                     </div>
-                    <p className="Card-Excerpt">
-                        {String(props.description).slice(0,100)}
+                    <p className="Card-Excerpt"
+                     dangerouslySetInnerHTML={
+                        { __html: String(props.description).slice(0,100) }}>
+                        
                     </p>
                 </Link> 
             </div>

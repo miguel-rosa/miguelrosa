@@ -32,9 +32,11 @@
     color:var(--second-color);
     text-align:left;
     display: inline;
+    margin-right: 20px;
+    
 }
 .Card-Date{
-    margin-left: 20px;
+    
     color:var(--second-color);
     font-weight: 500;
     opacity:.5;
@@ -43,10 +45,21 @@
     
     position: absolute;
 }
+@media screen and (max-width:768px){
+    .Card-Date{
+        position: relative;
+        display: block;
+        line-height: 1.2;
+        font-size:inherit;
+
+    }
+}
+
 .Card-Excerpt{
     font-size:17px;
     line-height: 1.4;
     color:var(--second-color);
     opacity: .8;
-    padding:10px 0 15px 0;
+    padding:15px 0 15px 0;
+    
 }

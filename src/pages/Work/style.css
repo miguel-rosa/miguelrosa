@@ -1,0 +1,29 @@
+.work{
+    width:100%;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    min-height: var(--main-height);
+    position: relative;
+}
+
+.work__container{
+    max-width: 1200px;
+    display: block;
+    padding:10px 20px;
+    flex-direction: column;
+    
+}
+@media screen and (max-width:768px){
+    .work{
+        display: block;
+    }
+    .work__container{
+        width:auto
+    }
+}
+.work__hero{
+    text-align: left;
+    margin-top:100px;
+    width:90%;
+}
