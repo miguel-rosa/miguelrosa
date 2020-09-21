@@ -17,7 +17,7 @@ const Home = () => {
                         <b>Miguel Rosa.</b>
                     </h1>
                     <p className="hero__description">
-                        Trabalho como desenvolvedor front-end júnior na Upsites Digital.
+                        Trabalho como desenvolvedor front-end pleno na corebiz.
                     </p>
                     <div className="hero__footer">
                         <MainButton to="/portfolio" text="Portfólio" />
